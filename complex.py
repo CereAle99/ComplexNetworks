@@ -79,7 +79,7 @@ if __name__ == "__main__":
     y = y.loc[:,'PFS_I_EVENT']
 
     threshold_value = 0.7
-    X_ = X.iloc[:,:806]
+    # X_ = X.iloc[:,:806]
     final_network = signature_extraction(X_, y, threshold_value)
 
 
