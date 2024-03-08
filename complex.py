@@ -80,6 +80,7 @@ if __name__ == "__main__":
 
     threshold_value = 0.7
     # X_ = X.iloc[:,:806]
+    X_ = X
     final_network = signature_extraction(X_, y, threshold_value)
 
 
