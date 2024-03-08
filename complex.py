@@ -86,7 +86,7 @@ if __name__ == "__main__":
 
     feature_selected = list(final_network.nodes())
     print(feature_selected)
-    file_path = os.join.path(results_path, "feature_selected.txt")
+    file_path = os.path.join(results_path, "feature_selected.txt")
 
     # Open the file in 'w' mode (write mode)
     with open(file_path, 'w') as file:
@@ -96,7 +96,7 @@ if __name__ == "__main__":
 
 
     X_reduced = X.iloc[:,feature_selected]
-    X_reduced.to_csv(os.join.path(results_path, "dataset_reduced.csv"), index=True)
+    X_reduced.to_csv(os.path.join(results_path, "dataset_reduced.csv"), index=True)
 
 
     # Visualization 
